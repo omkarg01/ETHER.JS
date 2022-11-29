@@ -112,9 +112,9 @@ const querryFromBlockchain = async () => {
     // const value = await walletContract.getValue();
     // console.log(String(value))
 
-    // const contractBalance = await walletContract.contractBalance();
-    // const etherContractBalance = ethers.utils.formatEther(contractBalance)
-    // console.log(etherContractBalance)
+    const contractBalance = await walletContract.contractBalance();
+    const etherContractBalance = ethers.utils.formatEther(contractBalance)
+    console.log(etherContractBalance)
 
     // const accountBalance = await walletContract.accountBalance("0x078fdAAd093275cAd0Ac2751ab777126AFefcdBB");
     // const etherAccountBalance = ethers.utils.formatEther(accountBalance)
