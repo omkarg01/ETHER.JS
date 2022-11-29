@@ -6,7 +6,7 @@ const providers = new ethers.providers.JsonRpcProvider("https://mainnet.infura.i
 async function  querryFromBlockchain() {
     // get recent block number
     const blockNumber = await providers.getBlockNumber();
-    console.log(blockNumber)
+    console.log(blockNumber)    
 
     // get balance of any random address
     const balance = await providers.getBalance("0xe0C4AB8887Bf79BAa58faE36eBB27d726eeCE26E");
